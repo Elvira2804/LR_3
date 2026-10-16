@@ -3,6 +3,10 @@
 #define  D 2.54
 #define  P 2.32166
 
+int z1();
+int z2();
+int z3();
+
 int main() {
 	setlocale(LC_CTYPE, "ru_RU.UTF-8");
 	z1();
@@ -17,10 +21,10 @@ int z1() {
 	scanf("%d %d", &A, &B);
 	printf("Введено число А: %d\n", A);
 	printf("Введено число B: %d\n", B);
-	printf("Сумма чисел равна: %d\n", A + B); 
+	printf("Сумма чисел равна: %d\n", A + B);
 	printf("Разность чисел равна: %d\n", A - B);
 	printf("Произведение чисел равно: %d\n", A * B);
-	printf("Частное чисел равно: %.1f\n", (float)A / B);
+	printf("Частное чисел равно: %.1f\n", (B * 1.0) / A);
 	printf("Остаток от деления второго числа на первое равно: %d\n\n", B % A);
 	return 0;
 }
